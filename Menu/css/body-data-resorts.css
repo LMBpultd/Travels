@@ -1,107 +1,110 @@
-.b-data{
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    overflow-x: hidden;
+.b-data {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-.b-data h1{
-    text-align: center;
-    margin: 20px 0;
-    font-weight: 800;
+.b-data h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 800;
 }
 
-.r-btn{
-        display: flex;
-        flex-direction: column;  
-        align-items:flex-start;  
-    }
+.r-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-    button{
-        margin-left: 10px;
-    }
-
+button {
+  margin-left: 10px;
+}
 
 @media screen and (min-width: 1000px) {
-    .b-data h1{
-        font-size: 7vw;
-    }
-  button{
-        font-size: 5vw;
-        font-weight: 800;
-        background: none;
-        border: none;
-        margin-top: 20px;
-    }
+  .b-data h1 {
+    font-size: 7vw;
+  }
+  button {
+    font-size: 5vw;
+    font-weight: 800;
+    background: none;
+    border: none;
+    margin-top: 20px;
+  }
 
-    .myDiv{
-        width: 100vw;
-        margin-bottom: 60px;
-    }
-    
-    .myDiv h1{
-        font-size: 3.5vw;
-        text-align: left;
-        margin-left: 2.5vw;
-    }
+  .myDiv {
+    width: 100vw;
+    margin-bottom: 60px;
+  }
 
-    .myDiv .images{
-        width: 47.5vw;
-        margin-left: 2.5vw;
-        float: left;
-    }
+  .myDiv h1 {
+    font-size: 0;
+    text-align: left;
+    margin-left: 2.5vw;
+    color: transparent;
+  }
 
-    .myDiv .images img{
-        width: calc(50% - 5px);
-    }
+  .myDiv .images {
+    width: 45vw;
+    margin-right: min(20px, 1.2vw);
+  }
 
-    .myDiv .hotal-details{
-        float: left;
-        width: 46.8vw;
-        min-height: 15px;
-        margin-left: 1vw;
-        margin-right: 2vw;
-        font-size: 3vw;
-        word-wrap: break-word;   /* For old browser compatibility */
+  .myDiv .images img {
+    width: calc(50% - 5px);
+  }
+
+  .myDiv .hotal-details {
+    width: 50vw;
+    min-height: 15px;
+    padding: 0;
+    font-size: 3vw;
+    word-wrap: break-word; /* For old browser compatibility */
     overflow-wrap: break-word; /* Modern standard */
-    overflow: hidden;        /* Prevent horizontal scroll */
+    overflow: hidden; /* Prevent horizontal scroll */
     white-space: normal;
+  }
 
-    }
+  .cd{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    gap: 5px;
+  }
 
-
+  .images .hotal-details{
+    flex: 1;
+  }
 
 
 }
 
-
 @media screen and (max-width: 1000px) {
-      .b-data h1{
-        font-size: 9vw;
-    }
+  .b-data h1 {
+    font-size: 9vw;
+  }
 
+  button {
+    font-size: 7vw;
+    font-weight: 800;
+    background: none;
+    border: none;
+    margin-top: 20px;
+  }
 
-    button{
-        font-size: 7vw;
-        font-weight: 800;
-        background: none;
-        border: none;
-        margin-top: 20px;
-    }
-
-  .myDiv{
+  .myDiv {
     display: none;
     margin-bottom: 40px;
   }
 
-  .myDiv h1{
+  .myDiv h1 {
     font-size: 6.6vw;
     font-weight: 600;
     text-align: left;
     margin-left: 20px;
   }
 
-  .myDiv .images{
+  .myDiv .images {
     min-height: 50px;
     width: 90vw;
     display: flex;
@@ -111,22 +114,28 @@
     gap: 5px;
   }
 
-    .myDiv .images img{
-        width: calc(50% - 2.5px);
-    }
+  .myDiv .images img {
+    width: calc(50% - 2.5px);
+  }
 
-
-    .myDiv .hotal-details{
-        margin-top: 25px;
-        min-height: 15px;
-        width: 90vw;
-        margin-left: 5vw;
-        font-size: 4.4vw;
-        word-wrap: break-word;   /* For old browser compatibility */
+  .myDiv .hotal-details {
+    margin-top: 15px;
+    min-height: 15px;
+    width: 90vw;
+    margin-left: 5vw;
+    font-size: 4.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word; /* For old browser compatibility */
     overflow-wrap: break-word; /* Modern standard */
-    overflow: hidden;        /* Prevent horizontal scroll */
+    overflow: hidden; /* Prevent horizontal scroll */
     white-space: normal;
-    }
+  }
+
+  .hotal-details h2{
+    display: none;
+  }
+
+
 
 
 }
