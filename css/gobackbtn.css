@@ -1,0 +1,35 @@
+.go-back-btn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #fff;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.go-back-btn:focus {
+  outline: 2px solid #333;
+}
+
+/*
+
+<button onclick="window.history.back()" class="go-back-btn" aria-label="Go Back">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+*/
+
+@media screen and (min-width: 1000px) {
+.go-back-btn{
+  display: none;
+}
+
+}

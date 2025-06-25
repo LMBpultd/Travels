@@ -1,0 +1,105 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+td,
+th {
+  text-align: center;
+  height: 35px;
+  text-transform: capitalize;
+}
+
+table {
+  margin: auto;
+  width: 90vw;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(61, 26, 26);
+  color: white;
+}
+
+.tbl {
+  width: 90vw;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.po {
+  width: 100%;
+  background-color: rgb(61, 26, 26);
+  min-height: 100px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+
+#x {
+  padding-top: 10px;
+  font-size: 3.5vw;
+  padding-left: 30px;
+}
+
+ul {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  table {
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 8.5vw;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  h4{
+    text-align: center;
+    font-size: 3.5vw;
+  }
+
+  ul > li {
+    text-align: left;
+    font-size: 2.9vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  table {
+    font-size: 2vw;
+  }
+
+  h1 {
+    font-size: 8.5vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+  h4{
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  ul > li {
+    text-align: left;
+    font-size: 2vw;
+  }
+
+  td,
+  th {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 35px;
+    font-size: 2.53vw;
+  }
+}

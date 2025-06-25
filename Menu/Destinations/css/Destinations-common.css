@@ -1,0 +1,121 @@
+
+#image{
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.list-destiny {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.list-destiny h3{
+    margin: 0;
+    margin-bottom: 50px;
+        font-weight: 700;
+}
+
+h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#plans{
+    width: 90%;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 3.5vw;
+    margin: auto;
+    line-height: 1.4;
+    padding-right: 10px;
+    margin-bottom: 25px;
+
+}
+
+.pan1, .pan2, .pan3 {
+    border-bottom: 4px solid black;
+    margin: auto;
+}
+
+.pan1{
+    margin-top: 50px;
+}
+
+
+#plans h2{
+    text-align: center; 
+    margin: 0;
+}
+
+#plans h3{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+li{
+    margin-left: -25px;
+    text-align: justify;
+}
+
+.sp{
+    height: 100px;
+    float: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .list-destiny h3 {
+        font-size: 5vw;
+    }
+
+    .list-destiny h2{
+        font-size: 5vw;
+    }
+    #plans h2{
+        font-size: 5.5vw;
+        margin-top: 25px;
+
+    }
+     #plans h3{
+        font-size: 5vw;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    li{
+        font-size: 3.5vw;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .list-destiny h3 {
+        font-size: 3vw;
+    }
+
+    .list-destiny h2{
+        font-size: 4vw;
+    }
+
+    #plans{
+        margin-top: 40px;
+    }
+    
+     #plans h2{
+        font-size: 2.8vw;
+        margin-top: 25px;
+    }
+     #plans h3{
+        font-size: 3vw;
+        margin: 0;
+    }
+
+    li{
+        font-size: 2vw;
+    }
+
+}

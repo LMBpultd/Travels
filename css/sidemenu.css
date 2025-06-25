@@ -1,0 +1,56 @@
+#sideMenu {
+  position: fixed;
+  top: 0;
+  left: -70%; /* Hidden off-screen */
+  width: 45%;
+  height: 100vh;
+  background-color: #131322;
+  color: white;
+  padding: 30px 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#sideMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sideMenu ul li {
+  margin-top: 30px;
+}
+#sideMenu ul li a i {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+#sideMenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 4vw;
+}
+
+#sideMenu.active {
+  left: 0;
+}
+
+#sideMenu h1 {
+  text-align: center;
+  font-size: 6vw;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  width: 95%;
+  margin: auto;
+}
+.contact-button {
+  font-size: 7vw;
+  background: transparent;
+  color: white;
+  padding: 5px;
+  border: none;
+}

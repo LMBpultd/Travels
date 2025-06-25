@@ -1,0 +1,131 @@
+.b-data{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.b-data h1{
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.r-btn{
+        display: flex;
+        flex-direction: column;  
+        align-items:flex-start;  
+    }
+
+    button{
+        margin-left: 10px;
+    }
+
+
+@media screen and (min-width: 1000px) {
+    .b-data h1{
+        font-size: 7vw;
+    }
+  button{
+        font-size: 5vw;
+        font-weight: 800;
+        background: none;
+        border: none;
+        margin-top: 20px;
+    }
+
+    .myDiv{
+        width: 100vw;
+    }
+    
+    .myDiv h1{
+        font-size: 3.5vw;
+        text-align: left;
+        margin-left: 2.5vw;
+    }
+
+    .myDiv .images{
+        width: 47.5vw;
+        margin-left: 2.5vw;
+        float: left;
+    }
+
+    .myDiv .images img{
+        width: calc(50% - 5px);
+    }
+
+    .myDiv .hotal-details{
+        float: left;
+        width: 46.8vw;
+        min-height: 15px;
+        margin-left: 1vw;
+        margin-right: 2vw;
+        font-size: 3vw;
+        word-wrap: break-word;   /* For old browser compatibility */
+    overflow-wrap: break-word; /* Modern standard */
+    overflow: hidden;        /* Prevent horizontal scroll */
+    white-space: normal;
+
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 1000px) {
+      .b-data h1{
+        font-size: 9vw;
+    }
+
+
+    button{
+        font-size: 7vw;
+        font-weight: 800;
+        background: none;
+        border: none;
+        margin-top: 20px;
+    }
+
+  .myDiv{
+    display: none;
+    margin-bottom: 40px;
+  }
+
+  .myDiv h1{
+    font-size: 6.6vw;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .myDiv .images{
+    min-height: 50px;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    margin-left: 5vw;
+    gap: 5px;
+  }
+
+    .myDiv .images img{
+        width: calc(50% - 2.5px);
+    }
+
+
+    .myDiv .hotal-details{
+        margin-top: 25px;
+        min-height: 15px;
+        width: 90vw;
+        margin-left: 5vw;
+        font-size: 4.4vw;
+        word-wrap: break-word;   /* For old browser compatibility */
+    overflow-wrap: break-word; /* Modern standard */
+    overflow: hidden;        /* Prevent horizontal scroll */
+    white-space: normal;
+    }
+
+
+}

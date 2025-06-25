@@ -1,0 +1,42 @@
+.head-matter {
+  width: 100vw;
+  background-color: rgb(61, 26, 26);
+  color: aliceblue;
+  text-align: justify;
+}
+
+.head-matter .hm h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hm {
+  width: 95vw;
+  margin: auto;
+  line-height: 1.3;
+  padding-bottom: 25px;
+}
+
+x {
+  color: transparent;
+  user-select: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .head-matter .hm h1 {
+    font-size: 4.5vw;
+  }
+  .head-matter {
+    font-size: 2.6vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .head-matter .hm h1 {
+    font-size: 6vw;
+  }
+  .head-matter {
+    font-size: 4vw;
+    margin: 45px 0;
+  }
+}

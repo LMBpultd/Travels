@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body-data h1 {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  width: 100vw;
+}
+
+.body-data {
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cars img {
+  width: 100%;
+}
+/* ✅ CLEAN VERSION */
+.cname {
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  font-size: 5.3vw;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  height: 6px;
+  margin: auto;
+  display: none;
+  bottom: 70%;
+}
+
+img {
+  transition: opacity 0.3s;
+}
+
+.cname.visible {
+  display: block;
+}
+
+.cname button {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.discription {
+  width: 100vw;
+  background-color: rgb(61, 26, 26);
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+  height: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.discription h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.data1 {
+  line-height: 1.3;
+  padding-bottom: 20px;
+}
+
+.data2 #c-btn {
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: rgb(108, 151, 42);
+}
+
+.btn-d2 #c-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}

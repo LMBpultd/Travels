@@ -1,0 +1,73 @@
+@media screen and (max-width: 1000px) {
+  /* Add responsive styles here if needed */
+
+  .topnav h1 {
+    font-family: "DM Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 10vw;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+    padding-bottom: 5px;
+    background-color: rgb(66, 27, 27);
+  }
+
+  .topnav h1 i {
+    float: right;
+    padding-top: 9px;
+    padding-right: 10px;
+    font-size: 10vw;
+    color: wheat;
+  }
+
+  .mob-menu {
+    display: block;
+  }
+  .desk-menu {
+    display: none;
+  }
+
+  .cars {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  #mob-hid {
+    display: none;
+  }
+
+  .discription h1 {
+    font-size: 6vw;
+  }
+
+  .data1 {
+    width: 93vw;
+    margin: auto;
+    font-size: 3.5vw;
+    text-align: justify;
+  }
+
+  .data2 .btn-d2 h2 {
+    display: none;
+  }
+
+  .data2 {
+    margin-top: 30px;
+    padding-bottom: 50px;
+  }
+  .btn-d2 #c-btn {
+    font-size: 5vw;
+  }
+
+  .btn-d2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .desk-mail {
+    display: none;
+  }
+
+  .mob-mail {
+    display: block;
+  }
+}

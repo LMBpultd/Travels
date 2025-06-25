@@ -1,0 +1,157 @@
+@media screen and (min-width: 1000px) {
+  .topnav h1 {
+    font-size: 7lvw;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    background-color: transparent;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
+  .topnav {
+    width: 100vw;
+    height: 45vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+  }
+
+  .button-container {
+    display: none;
+  }
+
+  .topnav i {
+    display: none;
+  }
+
+  .mob-menu {
+    display: none;
+  }
+  .desk-menu {
+    display: flex;
+    margin-left: 20vw;
+    width: fit-content;
+  }
+
+  .d-menu {
+    width: fit-content;
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(61, 26, 26);
+    border-radius: 20px;
+    font-size: 2vw;
+    margin-right: 4px;
+  }
+
+  .d-menu:hover {
+    font-weight: 700;
+    background-color: white;
+    color: rgb(61, 26, 26);
+    border: 2px solid black;
+  }
+
+  .imagesec,
+  .image-wrapper {
+    display: none;
+  }
+
+  .body-data {
+    margin: auto;
+    width: 100vw;
+  }
+
+  .body-data h1 {
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+
+  .cars {
+    width: 33vw;
+  }
+
+  .cname {
+    line-height: 0.8;
+    font-size: 1vw;
+  }
+
+  .discription h1 {
+    font-size: 5vw;
+  }
+
+  .data1 {
+    width: 60vw;
+    float: left;
+  }
+
+  .data2 {
+    width: 40vw;
+    float: right;
+  }
+
+  .discription {
+    width: 100vw;
+    overflow: hidden; /* Clear floats */
+  }
+
+  .data1 {
+    float: left;
+    width: 60vw;
+    max-width: 60vw;
+    background-color: rgb(61, 26, 26);
+    text-align: justify;
+  }
+
+  .data1 .data11 {
+    width: 58vw;
+    margin: auto;
+  }
+
+  .data2 {
+    float: right;
+    width: 40vw;
+    background-color: rgb(61, 26, 26);
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    background-color: rgb(61, 26, 26); /* optional */
+  }
+
+  .btn-d2 {
+    color: white;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-d2 h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5vw;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+  }
+
+  .btn-d2 #c-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .btn-d2 #c-btn a {
+    font-size: 2vw;
+    font-family: "Roboto", Arial, sans-serif;
+  }
+
+  .desk-mail {
+    display: block;
+  }
+
+  .mob-mail {
+    display: none;
+  }
+}
