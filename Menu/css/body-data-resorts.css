@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .b-data h1{
@@ -36,6 +36,7 @@
 
     .myDiv{
         width: 100vw;
+        margin-bottom: 60px;
     }
     
     .myDiv h1{
