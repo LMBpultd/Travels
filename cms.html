@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin CMS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CMS Admin Panel</h1>
+
+    <label for="quote">Quote:</label>
+    <textarea id="quote" rows="3"></textarea>
+
+    <label for="description">Description:</label>
+    <textarea id="description" rows="4"></textarea>
+
+    <label for="imageUpload">Upload Image:</label>
+    <input type="file" id="imageUpload" accept="image/*">
+    <img id="previewImage" src="" alt="Preview Image">
+
+    <br><br>
+    <button onclick="saveContent()">Save Content</button>
+    <p id="status"></p>
+  </div>
+
+  <script src="cms.js"></script>
+</body>
+</html>
