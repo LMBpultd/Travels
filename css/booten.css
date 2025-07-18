@@ -1,0 +1,102 @@
+:root {
+      --main-color: #9b59b6;
+      --action-color: #25d366;
+      --button-size: 60px;
+      --transition-duration: 0.4s;
+    }
+    .xfab-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: var(--button-size);
+      height: var(--button-size);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      z-index: 9999;
+    }
+    .xfab {
+      width: var(--button-size);
+      height: var(--button-size);
+      border-radius: 50%;
+      background-color: var(--main-color);
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 
+        opacity var(--transition-duration) ease,
+        transform var(--transition-duration) ease,
+        background-color var(--transition-duration) ease;
+      opacity: 0;
+      transform: scale(0) translateY(0);
+      pointer-events: none;
+      position: relative;
+    }
+    .xfab-main {
+      background-color: var(--main-color);
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+      position: relative;
+      z-index: 2;
+      transition: transform var(--transition-duration) ease;
+    }
+    .xfab-main i::before {
+      content: "💬";
+      display: inline-block;
+      transition: content var(--transition-duration) ease;
+      font-style: normal;
+    }
+    .xfab-container.active .xfab-main {
+      transform: rotate(180deg);
+    }
+    .xfab-container.active .xfab-main i::before {
+      content: "✕";
+    }
+    
+    .btn-call, .btn-whatsapp {
+      background-color: var(--action-color);
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform-origin: bottom center;
+    }
+    .btn-call {
+      --offset-y: -140%;
+    }
+    .btn-whatsapp {
+      --offset-y: -70%;
+    }
+    .xfab-container.active .btn-call {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(calc(var(--offset-y) + -90%)) scale(1);
+      transition-delay: 0.1s;
+    }
+    .xfab-container.active .btn-whatsapp {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(calc(var(--offset-y) + -40%)) scale(1);
+      transition-delay: 0.05s;
+    }
+
+    /* Optional: hover effect */
+    .xfab:hover {
+      filter: brightness(1.1);
+    }
+
+
+    #xfabContainer {
+        background: none;
+    }
+
+    i{
+        background: none;
+    }

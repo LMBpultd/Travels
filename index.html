@@ -1,18 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Public View</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Public Page</h1>
-    <blockquote id="quoteDisplay"></blockquote>
-    <p id="descriptionDisplay"></p>
-    <img id="imageDisplay" alt="Uploaded Content Image">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiana Gold and Diamonds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/booten.css">
+  </head>
+  <body>
+    <div class="mob-t">
+      <div class="t-mob">
+        <img src="images/logo.png" alt="Tiana Gold & Diamonds" id="logo" />
+      </div>
+      <div class="t-mob1">
+        <div class="hamburger" id="menu-btn">
+          <div class="bar"></div>
+          <div id="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="menu">
+      <a href="index.html"> <button class="menu-btnn">Home</button></a>
+      <a href="About.html"> <button class="menu-btnn">About</button></a>
+      <a href="Gallery.html"> <button class="menu-btnn">Gallery</button></a>
+      <a href="Contact.html"> <button class="menu-btnn">Contact</button></a>
+    </div>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
+
+    <div class="desk-t">
+      <div class="loggo-desk">
+        <img src="images/logo.png" alt="Tiana Gold & Diamonds" id="logo" />
+      </div>
+
+      <div id="deskmenu">
+        <a href="index.html"> <button class="menu-btnn">Home</button></a>
+        <a href="About.html"> <button class="menu-btnn">About</button></a>
+        <a href="Gallery.html"> <button class="menu-btnn">Gallery</button></a>
+        <a href="Contact.html"> <button class="menu-btnn">Contact</button></a>
+      </div>
+
+      <div class="desk-mob-c">
+        <button id="desk-c-c">
+          <a href="tel:+919645522916"> +91 96455 22916 </a>
+        </button>
+      </div>
+    </div>
+
+    <div class="home">
+      <img src="images/index/home.png" id="desk-v" />
+      <img src="images/index/home-mob.png" id="mob-v" />
+      <div class="h0overlay"></div>
+      <div class="home-data">
+        <h1>Tiana Gold And Diamonds</h1>
+
+        <p>Sparkle in Every Moment, Shine for a Lifetime.</p>
+
+        <button id="hcc"><a href="tel:+919645522916"> Contact Us </a></button>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", () => {
+        document.querySelector(".home-data").classList.add("show");
+      });
+    </script>
+
+    <div class="home1">
+      <div class="h1">
+        <h1>Celebrate Every Occasion with Radiant Elegance</h1>
+        <p>
+          Discover the perfect blend of elegance and craftsmanship at Tiana Gold
+          and Diamonds. Our exquisite collection of gold and diamond jewelry is
+          designed to celebrate your special moments with timeless beauty.
+          Whether you’re looking for traditional designs or modern masterpieces,
+          we offer the finest quality jewelry that reflects luxury and
+          sophistication. Visit our store and experience the artistry of
+          perfection.
+        </p>
+      </div>
+
+      <div class="h2">
+        <img src="images/index/2ring.png" />
+      </div>
+    </div>
+
+    <div class="collection">
+      <h1>Our Collection</h1>
+
+      <div class="bgs">
+        <div class="c10">
+          <div class="c1"><img src="images/index/c1.webp" id="c1" /></div>
+
+          <div class="c1-d">
+            <h2>Gold Jewelry</h2>
+            <p>
+              Immerse yourself in the rich tradition of finely crafted gold
+              jewelry, from elegant bangles to intricate necklaces and earrings.
+              <br /><br />
+              <button class="con"><a href="Contact.html">Contact Us</a></button>
+            </p>
+          </div>
+        </div>
+
+        <div class="c10">
+          <div class="c2">
+            <img src="images/index/dia.webp" />
+          </div>
+
+          <div class="c2-d">
+            <h2>Diamond Jewelry</h2>
+            <p>
+              Sparkle with our exclusive diamond collection, featuring
+              engagement rings, bridal sets, and contemporary designs that exude
+              grace.
+              <br /><br />
+              <button class="con"><a href="Contact.html">Contact Us</a></button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom">
+      <div class="custtm1">
+        <img src="images/index/custom/c1.webp" />
+        <div class="overlay"><h1>Custom Creations</h1></div>
+      </div>
+
+      <div class="cust-hd">
+        <div class="custtm">
+          <a href="images/index/custom/1.jpg"
+            ><img src="images/index/custom/1.jpg" />
+          </a>
+        </div>
+        <div class="custtm">
+          <a href="images/index/custom/2.jpg"
+            ><img src="images/index/custom/2.jpg" />
+          </a>
+        </div>
+        <div class="custtm">
+          <a href="images/index/custom/3.jpg"
+            ><img src="images/index/custom/3.jpg" />
+          </a>
+        </div>
+        <div class="custtm">
+          <a href="images/index/custom/4.jpg"
+            ><img src="images/index/custom/4.jpg" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bt">
+      <button id="bt">
+        <a href="Gallery.html"> CLICK HERE TO SEE OUR UNIQUE COLLECTIONS </a>
+      </button>
+    </div>
+
+    <div class="uniq">
+      <img src="images/index/uniq/1.png" class="uni-img" />
+
+      <div class="uni-data">
+        <h1>Exquisite Designs. Eternal Beauty. Only at Tiana</h1>
+        <br />
+        <p>
+          At Tiana Gold and Diamonds, we believe that jewelry is more than just
+          an ornament—it’s a symbol of love, celebration, and heritage.
+        </p>
+      </div>
+
+      <img src="images/index/uniq/2.png" class="uni-img" />
+    </div>
+
+    <footer>
+
+<div class="qcl" id="x">
+
+<h1>Quick Links</h1>
+  
+<a href="index.html">Home</a>
+<a href="About.html">About Us</a>
+<a href="Gallery.html">Gallery</a>
+<a href="Contact.html">Contact</a>
+</div>
+
+
+<div id="x">
+  <h1>Business Hours</h1>
+  <p id="bst">10.00 Am - 7.00 Pm</p>
+</div>
+
+
+<div id="y">
+  <h1 id="xcv">Tiana Gold and Diamonds</h1>
+
+<a><i class="fas fa-map-marker-alt icon-outline"> <span>College Rd, Kothamangalam, Kerala 686691</span> </i></a>
+<a href="tel:+919645522916"><i class="fas fa-phone icon-outline"><span>+91 96455 22916</span></i></a>
+<a href="https://mail.google.com/mail/?view=cm&to=tianagoldanddiamonds@gmail.com" target="_blank"><i class="fas fa-envelope icon-outline"><span> tianagoldanddiamonds@gmail.com </span></i></a>
+<a href="https://maps.app.goo.gl/LbqQLvwL2xSKGuHf8"><i class="fas fa-paperclip icon-outline"><span>Navigate</span></i></a>
+
+
+</div>
+
+
+<div id="x" class="zzz">
+
+  <h1>Google Reviews</h1>
+
+<div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
   </div>
 
-  <script src="view.js"></script>
-</body>
+  <button class="Reviews"><a href="https://g.page/r/CUU1-99CFYy0EBM/review">REVIEW US</a></buttonclass>
+
+</div>
+
+<span id="copy">Copyright © 2025 Tiana Gold and Diamonds  | All Rights Reserved.</span>
+
+<div class="mcopy">
+
+  <p id="mcopy">Copyright © 2025 Tiana Gold and Diamonds  | All Rights Reserved.</>
+
+
+</div>
+
+
+    </footer>
+
+
+      <div class="xfab-container" id="xfabContainer" aria-label="floating action buttons">
+    <button class="xfab btn-call" aria-label="Call"><a href="https://wa.me/+919645522916"><i class="fa fa-whatsapp"></i></a></button>
+    <button class="xfab btn-whatsapp" aria-label="WhatsApp"><i class="fa fa-phone"></i></a></button>
+    <button class="xfab xfab-main" aria-expanded="false" aria-label="Toggle menu" onclick="togglexfab()"><i></i></button>
+  </div>
+
+  <script>
+    function togglexfab() {
+      const container = document.getElementById('xfabContainer');
+      const isActive = container.classList.toggle('active');
+      const mainButton = container.querySelector('.xfab-main');
+      mainButton.setAttribute('aria-expanded', isActive);
+    }
+  </script>
+
+
+
+
+
+
+
+  </body>
 </html>
